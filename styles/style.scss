@@ -1,4 +1,3 @@
-/* Variables */
 $title-fontcolor: #A1A1A1;
 $title-fontcolor-hover: #333;
 
@@ -16,6 +15,16 @@ html, body {
   font-style: normal;
   font-weight: normal;
   src: local('Droid Serif'), local('DroidSerif'), url('../fonts/droid-serif.ttf') format('truetype');
+}
+
+
+#dripper {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 #page {

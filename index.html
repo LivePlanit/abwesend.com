@@ -5,8 +5,14 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="Benjamin Fritsch, ben, beanie, beanieboi" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+	  <script type='text/javascript' src='scripts/bacon.js'></script>
+	  <script type='text/javascript' src='scripts/canvas.js'></script>
+	  <script type='text/javascript' src='scripts/dripsession.js'></script>
   </head>
-  <body>
+  <body onload="init()">
+    <canvas id='dripper'>
+      <div class='no_canvas'>No Canvas</div>
+    </canvas>
     <div id="page">
       <div class="item">
         <span class="title" id="abwesend">abwesend</span>
