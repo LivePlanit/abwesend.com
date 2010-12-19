@@ -57,6 +57,7 @@ function getMouseCoords(event){
 document.onmousedown = function(event){
     var mc = getMouseCoords(event);
     if(mc != null && canvas.isInside(mc)){
+        setTimeout(showOverlay, 3600);
         var previous_pos = mc;
         canvas.circle(previous_pos,end_radius);
         document.onmousemove = function(event){
@@ -70,6 +71,12 @@ document.onmousedown = function(event){
             previous_pos = nmc;
         }
     }
+}
+
+function showOverlay() {
+  overlay = document.getElementById("overlay");
+  console.log(overlay);
+  overlay.removeAttribute("style");
 }
 document.onmouseup = function(event){
     document.onmousemove = function(){};

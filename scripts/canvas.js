@@ -7,7 +7,6 @@ function Canvas(id) {
     this.height = window.innerHeight;
     this.canvas.setAttribute('width', this.width);
     this.canvas.setAttribute('height', this.height);
-    console.log(this.height + ' ' + this.width);
     this.fill_color = "#FFF";
     this.stroke_color = "#000";
 }

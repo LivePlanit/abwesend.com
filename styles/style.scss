@@ -27,6 +27,19 @@ html, body {
   height: 100%;
 }
 
+#overlay {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  left: 40%;
+  width: 150px;
+  height: 180px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  opacity: 0.9;
+  background-color: darken($title-fontcolor, 25%);
+}
+
 #page {
   width: 350px;
   text-align: left;
